@@ -44,3 +44,43 @@ console.log("String(true):", String(true));
 console.log("String(false):", String(false));
 console.log("String(null):", String(null));
 console.log("String(undefined):", String(undefined));
+
+
+
+// ===== JavaScript Type Conversion in Operations =====
+
+console.log("=== Arithmetic with Type Conversion ===");
+
+console.log("'5' + 5  =", "5" + 5);        // "55"  (string + number => string)
+console.log("'5' - 2  =", "5" - 2);        // 3     (string -> number)
+console.log("'5' * '2' =", "5" * "2");     // 10    (strings -> numbers)
+console.log("'10' / 2 =", "10" / 2);       // 5     (string -> number)
+
+console.log("10 + true =", 10 + true);     // 11    (true -> 1)
+console.log("10 + false =", 10 + false);   // 10    (false -> 0)
+console.log("10 + null =", 10 + null);     // 10    (null -> 0)
+console.log("10 + undefined =", 10 + undefined); // NaN
+
+console.log("\n=== Comparisons with Type Conversion ===");
+
+console.log("5 == '5'   =", 5 == "5");     // true  (loose equality -> converts)
+console.log("5 === '5'  =", 5 === "5");    // false (strict equality -> no convert)
+
+console.log("true == 1  =", true == 1);    // true  (true -> 1)
+console.log("false == 0 =", false == 0);   // true
+console.log("null == undefined =", null == undefined); // true
+console.log("null === undefined =", null === undefined); // false
+
+console.log("NaN == NaN =", NaN == NaN);   // false
+console.log("Object.is(NaN, NaN) =", Object.is(NaN, NaN)); // true
+
+console.log("\n=== Truthy / Falsy in Conditions ===");
+
+console.log("Boolean(0)   =", Boolean(0));    // false
+console.log("Boolean(1)   =", Boolean(1));    // true
+console.log("Boolean('')  =", Boolean(""));   // false
+console.log("Boolean(' ') =", Boolean(" "));  // true
+console.log("Boolean('huzaifa') =", Boolean("huzaifa")); // true
+console.log("Boolean([])  =", Boolean([]));   // true
+console.log("Boolean({})  =", Boolean({}));   // true
+
