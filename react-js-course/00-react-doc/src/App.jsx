@@ -2,6 +2,7 @@ import React from "react"
 import ReactParent from "./react_props/ReactParent"
 import Timer from "./react_useEffect/Timer"
 import Todo from "./react_useEffect/Todo"
+import Indexx from "./Indexx.jsx"
 
 function App() {
 
@@ -13,7 +14,8 @@ function App() {
 
       {/* react- useEffect */}
       {/* <Timer /> */}
-      <Todo />
+      {/* <Todo /> */}
+      <Indexx />
 
     </>
   )
