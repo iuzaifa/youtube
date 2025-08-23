@@ -24,4 +24,5 @@ console.log("NaN (Not a Number):", "abc" * 3);  // NaN
 console.log("toFixed(2):", intNum.toFixed(2)); 
 console.log("toPrecision(4):", intNum.toPrecision(4)); // "123.5"
 
+// checks random numbers
 console.log(Math.random() * 1 + 1)
