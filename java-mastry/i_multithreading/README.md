@@ -1,13 +1,14 @@
 
 
-Start , run , 
-sleep , join,
-thread States(NEW , RUNNABLE, RUNNING, BLOCKED, WAITING, TIMED_WAITING, TERMINATED)
-priority (low , mid, height),  
- setName,
-interrupt,
-yield
-Daemon Threads
+explain ->  Start , run ,
+explain ->  sleep , join,
+explain ->  thread States(NEW , RUNNABLE, RUNNING, BLOCKED, WAITING, TIMED_WAITING, TERMINATED)
+explain ->  priority (low , mid, height),  
+explain -> setName,
+explain ->  interrupt,
+explain ->  yield
+explain -> Daemon Threads
+explain -> Synchronization
 
 
 

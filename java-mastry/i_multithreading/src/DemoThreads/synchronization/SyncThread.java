@@ -1,0 +1,18 @@
+package DemoThreads.synchronization;
+
+public class SyncThread extends Thread{
+
+
+    private Counter counter;
+
+    public SyncThread(Counter counter){
+        this.counter = counter;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 1000; i++){
+            counter.increment();;
+        }
+    }
+}
