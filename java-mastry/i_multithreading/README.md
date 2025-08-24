@@ -9,6 +9,18 @@ explain ->  interrupt,
 explain ->  yield
 explain -> Daemon Threads
 explain -> Synchronization
+explain -> Lock ( new ReentrantLock()), TryLock(300, TimeUnit.MILLISECONDS); AND  lock.unlock();
+explain -> LockIntruptibly()
+explain -> 1. Fair Locks 2. Unfair Locks
+explain -> read and Write Locks 
+explain -> Deadlock (-- )
+explain -> Thread Communication Done in Java? ( Inter-thread Communication) ( -- )
+explain -> Thread Safety in Java 
+explain ->
+
+
+
+
 
 
 

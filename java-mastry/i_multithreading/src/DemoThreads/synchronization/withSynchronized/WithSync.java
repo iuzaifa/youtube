@@ -1,4 +1,4 @@
-package DemoThreads.synchronization;
+package DemoThreads.synchronization.withSynchronized;
 
 public class WithSync {
     public static void main(String[] args) {
