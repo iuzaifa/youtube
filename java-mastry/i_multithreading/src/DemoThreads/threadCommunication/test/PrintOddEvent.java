@@ -10,10 +10,8 @@ public class PrintOddEvent {
             if (num % 2 == 0){
                 wait();
             }
-           
             System.out.println(Thread.currentThread().getName() + " : " + num);
             num++;
-
             notify();
         }
     }
