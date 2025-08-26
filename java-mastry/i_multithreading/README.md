@@ -16,7 +16,8 @@ explain -> read and Write Locks
 explain -> Deadlock (-- )
 explain -> Thread Communication Done in Java? ( Inter-thread Communication) ( -- )
 explain -> Thread Safety in Java 
-explain -> ThreadPool , ExecutorsService, Threads, Runnable, and Callable, ScheduleExecutorsService, 
+explain -> ThreadPool , ExecutorsService, Threads, Runnable, and Callable, ScheduleExecutorsService, DependentServices
+           CountdownLatch & CompletableFuture
 
 
 
