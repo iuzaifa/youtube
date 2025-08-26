@@ -23,7 +23,8 @@ public class CountDownLatchDemo {
         }
 
         // Main thread waits until all tasks are done
-        latch.await();  
+        latch.await();
+
         System.out.println("All tasks completed. Proceeding...");
     }
 }

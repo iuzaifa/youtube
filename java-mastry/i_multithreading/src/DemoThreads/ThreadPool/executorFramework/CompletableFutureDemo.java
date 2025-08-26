@@ -14,5 +14,8 @@ public class CompletableFutureDemo {
 
         // Ensure main thread doesn’t exit early
         Thread.sleep(2000);
+
+        System.out.println(future.get());
+        System.out.println(future.complete(100));
     }
 }
