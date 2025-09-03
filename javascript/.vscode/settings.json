@@ -1,0 +1,6 @@
+{
+    "markdown.preview.fontFamily": "JetBrains Mono, monospace",
+    "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+    "editor.allowVariableFontsInAccessibilityMode": true,
+    "editor.fontSize": 13
+}
