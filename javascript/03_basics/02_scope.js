@@ -5,11 +5,11 @@
 let globalVar = "I am Global";
 
 function showGlobal() {
-    console.log("Inside function:", globalVar); // Accessible
+    // console.log("Inside function:", globalVar); // Accessible
 }
 
 showGlobal();
-console.log("Outside function:", globalVar); // Accessible
+// console.log("Outside function:", globalVar); // Accessible
 
 
 
@@ -17,7 +17,7 @@ console.log("Outside function:", globalVar); // Accessible
 // Variables declared inside a function are only accessible within it.
 function myFunctionScope() {
     let localVar = "I am Local (Function Scope)";
-    console.log("Inside function scope:", localVar); // Accessible
+    // console.log("Inside function scope:", localVar); // Accessible
 }
 
 myFunctionScope();
@@ -30,7 +30,7 @@ myFunctionScope();
 if (true) {
     let blockVar = "Inside Block (let)";
     const anotherBlockVar = "Inside Block (const)";
-    console.log("Inside block:", blockVar, ",", anotherBlockVar); // Accessible
+    // console.log("Inside block:", blockVar, ",", anotherBlockVar); // Accessible
 }
 
 // console.log(blockVar); // Error: blockVar is not defined
@@ -43,7 +43,7 @@ if (true) {
 if (true) {
     var testVar = " Declared with var";
 }
-console.log("Outside block (var leaks):", testVar); // Still Accessible
+// console.log("Outside block (var leaks):", testVar); // Still Accessible
 
 
 
@@ -53,7 +53,7 @@ function outer() {
     let outerVar = "Outer Variable";
 
     function inner() {
-        console.log("Inner accessing outerVar:", outerVar); // Accessible due to closure
+        // console.log("Inner accessing outerVar:", outerVar); // Accessible due to closure
     }
 
     inner();
@@ -107,7 +107,7 @@ function add(num) {
     return num + 1;
 }
 
-console.log(add(5)); // 6
+// console.log(add(5)); // 6
 
 
 
@@ -120,4 +120,6 @@ const addnums = function (num) {
     return num + 2;
 }
 
-console.log(addnums(5)); // 7
+// console.log(addnums(5)); // 7
+
+
