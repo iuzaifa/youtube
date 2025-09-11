@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning</title>
+</head>
+<body>
+   
+
+    <div class="bg-balck">
+        <h1 class="heading" id="title" >Lorem ipsum dolor sit amet.<span style="display: none;"> i am display: none !</span>
+        <h1 class="heading" id="title" >Lorem ipsum dolor sit amet.<span style="display: none;"> i am display: none !</span>
+        </h1>
+        <p id="pg">Lorem ipsum dolor sit amet consectetur.</p>
+
+
+        <ul>
+            <li class="x">one</li>
+            <li class="x">two</li>
+            <li class="x">three</li>
+            <li class="x">four</li>
+        </ul>
+
+        <div class="first-dive">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis cupiditate sapiente quo error nemo dolores quia incidunt recusandae, tempora nihil illum repellendus accusamus libero a harum quis labore. Molestiae perferendis illum vero repudiandae accusantium mollitia itaque quam totam soluta, vitae, quo fugit! Harum neque optio sit eligendi eaque reprehenderit delectus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis cupiditate sapiente quo error nemo dolores quia incidunt recusandae, tempora nihil illum repellendus accusamus libero a harum quis labore. Molestiae perferendis illum vero repudiandae accusantium mollitia itaque quam totam soluta, vitae, quo fugit! Harum neque optio sit eligendi eaque reprehenderit delectus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis cupiditate sapiente quo error nemo dolores quia incidunt recusandae, tempora nihil illum repellendus accusamus libero a harum quis labore. Molestiae perferendis illum vero repudiandae accusantium mollitia itaque quam totam soluta, vitae, quo fugit! Harum neque optio sit eligendi eaque reprehenderit delectus.</p>
+        </div>
+        
+    </div>
+
+    <script>
+        // let t = document.getElementById('title').innerHTML = "I am first heading !";
+        // let t2 = document.getElementById('title').innerText;
+        // t3 = document.getElementById('title').textContent;
+        // console.log('innerText :: ' + t2);
+        // console.log('textContent :: '+t3);
+        // document.querySelector('ul > li ').style.backgroundColor = 'red';
+        // document.querySelectorAll('ul > li ').forEach( li => {
+        //     li.style.backgroundColor = 'green'
+        //     li.style.margin = '10px'
+        //     li.style.padding = '10px'
+        // })
+        // document.querySelector('li').innerText = 1;
+        // let q = document.querySelector('title')
+        // console.log(q)
+        // q2 = document.querySelector('h1')
+        const list = document.getElementsByClassName('x');
+        console.log(list)
+        const convetedArr = Array.from(list)
+        convetedArr.forEach( e =>  {
+            e.style.color = 'red'
+        })
+
+        console.log(convetedArr)
+
+
+        const divs = document.querySelectorAll('.first-dive');
+
+        function updateBg(){
+            if (window.innerWidth > 420) {
+                divs.forEach(el => {
+                    el.style.backgroundColor = 'black';
+                    el.style.color = 'orange';
+                    el.style.padding = '12px';
+                });
+            } else{
+                divs.forEach(el => {
+                    el.style.backgroundColor = 'orange';
+                    el.style.color = 'black';
+                    el.style.padding = '12px'
+
+                });
+            }
+        }
+
+        updateBg();
+        window.addEventListener('resize', updateBg);
+       
+
+    </script>
+</body>
+</html>
